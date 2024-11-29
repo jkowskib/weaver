@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="weaver">
+    <output-path>$PROJECT_DIR$/out/artifacts/weaver</output-path>
+    <root id="archive" name="weaver.jar">
+      <element id="module-output" name="Weaver" />
+    </root>
+  </artifact>
+</component>
