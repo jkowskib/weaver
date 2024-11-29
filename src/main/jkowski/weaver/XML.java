@@ -5,7 +5,20 @@ import jkowski.weaver.errors.MalformedXML;
 import java.util.Stack;
 import java.util.ArrayList;
 
+/**
+ * XML Parser
+ */
 public class XML {
+    /**
+     * XML Parser
+     */
+    public XML() { }
+
+    /**
+     * Parses an XML blob with a root node
+     * @param xmlBlob String xml data
+     * @return Tag
+     */
     public static Tag parse(String xmlBlob) {
         Stack<Tag> stack = new Stack<>();
         StringBuilder contentBuffer = new StringBuilder();
@@ -63,6 +76,11 @@ public class XML {
         return stack.pop();
     }
 
+    /**
+     * Parses an opening tag
+     * @param tagData inner tag data
+     * @return Tag
+     */
     private static Tag parseOpeningTag(String tagData) {
         int nameEnd = tagData.indexOf(' ');
 
@@ -101,6 +119,11 @@ public class XML {
         return createdTag;
     }
 
+    /**
+     * Extracts attributes from a string
+     * @param tagData attribute tag data
+     * @return ArrayList
+     */
     private static ArrayList<String> extractAttributes(String tagData) {
         StringBuilder buffer = new StringBuilder();
         ArrayList<String> attributes = new ArrayList<>();

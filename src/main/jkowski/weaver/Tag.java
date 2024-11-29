@@ -8,19 +8,35 @@ import java.util.ArrayList;
  */
 public class Tag {
     private final String name;
+    /**
+     * Tag content
+     */
     protected String content;
     private final HashMap<String, String> attributes = new HashMap<>();
     private final ArrayList<Tag> children = new ArrayList<>();
 
     /**
      * XML Tag
+     * @param name String
      */
     public Tag(String name) { this.name = name; }
 
+    /**
+     * Tag name
+     * @return String
+     */
     public String name() { return name; }
 
+    /**
+     * Content of Tag
+     * @return String
+     */
     public String content() { return content; }
 
+    /**
+     * Sets the content of the tag
+     * @param content String
+     */
     protected void setContent(String content) { this.content = content; }
 
     /**

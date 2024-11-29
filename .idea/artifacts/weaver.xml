@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/weaver</output-path>
     <root id="archive" name="weaver.jar">
       <element id="module-output" name="Weaver" />
+      <element id="dir-copy" path="$PROJECT_DIR$/out/docs" />
     </root>
   </artifact>
 </component>
