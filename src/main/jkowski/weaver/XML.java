@@ -32,6 +32,9 @@ public class XML {
                  * ? for an XML header
                  *  (f.ex) <?xml version="1.0" encoding="UTF-8"?>
                  *
+                 * ! a comment
+                 * (f.ex) <!-- Hello World! -->
+                 *
                  * / for a closing tag
                  *
                  * > a broken tag
@@ -45,7 +48,7 @@ public class XML {
                 String innerTag = xmlBlob.substring(pointer + 1, endOfTag);
 
                 switch (xmlBlob.charAt(pointer + 1)) {
-                    case '?':
+                    case '!', '?':
                         contentBuffer.setLength(0);
                         break;
                     case '/':
