@@ -3,7 +3,7 @@ Simple XML parsing library for Java
 
 ```java
 import jkowski.weaver.Tag;
-import jkowski.weaver.XML;
+import jkowski.weaver.Document;
 
 public class ParserTest {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class ParserTest {
                 """;
         
         // "note" is our root node and will be returned by the parser
-        Tag xml = XML.parse(exampleXML);
+        Tag xml = Document.parse(exampleXML);
         System.out.println(
                 xml.getTag("to").content()
         );

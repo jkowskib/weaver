@@ -8,11 +8,11 @@ import java.util.ArrayList;
 /**
  * XML Parser
  */
-public class XML {
+public class Document {
     /**
      * XML Parser
      */
-    public XML() { }
+    public Document() { }
 
     /**
      * Parses an XML blob with a root node
