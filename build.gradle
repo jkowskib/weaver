@@ -30,7 +30,7 @@ tasks.jar {
 
 tasks.javadoc {
     options {
-        addBooleanOption('protected', true)
+        addBooleanOption('public', true)
     }
     source = sourceSets.main.allJava
 }
