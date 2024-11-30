@@ -6,11 +6,11 @@ import java.util.Stack;
 import java.util.ArrayList;
 
 /**
- * XML Parser
+ * An XML document or file
  */
 public class Document {
     /**
-     * XML Parser
+     * XML Document
      */
     public Document() { }
 
