@@ -19,7 +19,6 @@ Thumbs.db
 *.class
 
 # JAR, WAR, and EAR files
-*.jar
 *.war
 *.ear
 
